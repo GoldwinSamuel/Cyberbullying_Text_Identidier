@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.home_bg{
+    background-image: url("/static/img/How-To-Handle-Cyberbullying.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-color: #464646;
+}
+.container{
+    background-color: rgba(42, 165, 155, 0.49);
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+#predict_btn {
+    transition: 2s;
+    padding: 2vmin;
+    position: absolute;
+    left: 47.5vw;
+    top: 64vh;
+    width: 30vw;
+    font-size: 5.5vmin;
+    border-radius: 5vmax 5vmax 0 0;
+    background-color: transparent;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    transform: rotateX(-30deg) rotateZ(-34deg);
+    border:1vmin solid rgba(149, 211, 205, 1);
+    box-shadow:-2px -3px 20px 0px rgba(0,0,0,0.3);
+    border-bottom: 0;
+    flex-wrap: nowrap;
+}
+
+#predict_btn a {
+  color: rgba(149, 211, 205, 1);
+  text-decoration: none;
+  font-family: "Madimi One", sans-serif;
+  word-spacing: .1vmin;
+  letter-spacing: .1vmin;
+}
+#predict_btn:hover{
+  transition: 2s;
+  box-shadow: -6px -20px 20px 20px rgba(0,0,0,0.3);
+}

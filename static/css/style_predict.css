@@ -1,0 +1,119 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.predict_bg{
+    background-image: url("/static/img/Risk-Management-Cyberbullying-BKG.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container{
+    background-color: rgba(42, 165, 155, 0.49);
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+}
+.inner{
+    margin: auto;
+    position: relative;
+}
+.inner_title { 
+    display: inline-block; 
+}
+.text {
+    font-size: 5em;
+    letter-spacing: 10px;
+    font-family: monospace;
+    border-right: 5px solid;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: 
+        typing 2s steps(18),
+        cursor .2s step-end infinite alternate;
+}
+@keyframes cursor {
+    50% { border-color: transparent }
+}
+
+@keyframes typing {
+    from { width: 0 }
+}
+
+#tweet_input{
+    background-color: rgba(146,188,147,1);
+}
+
+textarea{
+    border: 0;
+    font-size: 30px;
+    padding: 30px;
+    width: 100%;
+    height: 250px;
+}
+textarea:focus{
+    border:0;
+}
+.form{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    border: 5px dashed black;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+form button{
+    float: right;
+    /* width: 100%; */
+    padding: 30px;
+    font-size: 2em;
+    letter-spacing: 10px;
+    font-family: monospace;
+    border-radius: 22px;
+    /* border-top: 5px solid black; */
+    margin: auto;
+    border: 5px solid black;
+}
+
+form button:hover{
+    cursor: pointer;
+}
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+#blinkDiv {
+    animation: blink 5s infinite;
+    padding: 20px;
+    font-family: monospace;
+    font-size: 1em;
+    background-color: rgb(255, 204, 0);
+}
+@keyframes moveRight {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(100%); }
+}
+
+.arrow-container {
+    width: 100px; /* Adjust as needed */
+    overflow: hidden;
+    margin: auto;
+}
+.float_indi{
+    position: absolute;
+    top:86%;
+    display: flex;
+    flex-direction: row;
+}
+.arrow {
+    width: 40px;
+    height: 40px;
+    font-size: 35px;
+    color: black;
+    transform: rotate(45deg);
+    position: relative;
+    animation: moveRight 2s linear infinite; /* Adjust duration as needed */
+}
